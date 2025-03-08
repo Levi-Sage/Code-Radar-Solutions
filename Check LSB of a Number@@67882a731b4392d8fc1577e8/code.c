@@ -5,9 +5,9 @@ int main() {
     int number;   
     scanf("%d", &number);  
     if (number & 1) {  
-        printf("%d", number);  
+        printf("Set");  
     } else {  
-        printf("%d\n", number);  
+        printf("Not Set");  
     }  
     
     return 0;  
