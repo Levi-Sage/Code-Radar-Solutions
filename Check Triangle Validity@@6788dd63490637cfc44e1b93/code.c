@@ -8,12 +8,9 @@ int isValidTriangle(float side1, float side2, float side3) {
 }  
 
 int main() {  
-    float side1, side2, side3;  
-    printf("Side 1: ");  
+    float side1, side2, side3;   
     scanf("%f", &side1);  
-    printf("Side 2: ");  
-    scanf("%f", &side2);  
-    printf("Side 3: ");  
+    scanf("%f", &side2);   
     scanf("%f", &side3);  
  
     if (isValidTriangle(side1, side2, side3)) {  
