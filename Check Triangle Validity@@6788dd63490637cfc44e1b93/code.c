@@ -1,16 +1,26 @@
 // Your code here...
-#include<stdio.h>
-int main(){
-    int a,b,c;
-    scanf("%d %d %d",&a ,&b, &c);
-    if(a+b>c){
-        printf("Valid");
-    }else if(b+c>a){
-        printf("Valid");
+#include <stdio.h>  
 
-    }else if(c+a>b){
-        printf("Valid");
-    }else{
-        printf("Invalid");
-    }
-}
+int isValidTriangle(float side1, float side2, float side3) {  
+    return (side1 + side2 > side3) &&   
+           (side1 + side3 > side2) &&   
+           (side2 + side3 > side1);  
+}  
+
+int main() {  
+    float side1, side2, side3;  
+    printf("Side 1: ");  
+    scanf("%f", &side1);  
+    printf("Side 2: ");  
+    scanf("%f", &side2);  
+    printf("Side 3: ");  
+    scanf("%f", &side3);  
+ 
+    if (isValidTriangle(side1, side2, side3)) {  
+        printf("Valid");  
+    } else {  
+        printf("Invalid");  
+    }  
+
+    return 0;  
+}  
