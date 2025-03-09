@@ -23,9 +23,9 @@ int main() {
             printf("%d",result);  
             break;  
         case '/':  
-            if (num2 != 0) 
+            if (num2==0) 
             {
-                printf("error")  
+                printf("error"); 
                 
             }  else{
                 result = num1 / num2;  
