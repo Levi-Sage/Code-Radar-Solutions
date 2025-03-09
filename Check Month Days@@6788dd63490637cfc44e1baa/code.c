@@ -24,7 +24,7 @@ int main() {
             printf("28\n"); // February has 28 days  
             break;  
         default: // Invalid month  
-            printf("Invalid month.\n");  
+            printf("Invalid month\n");  
             break;  
     }  
 
