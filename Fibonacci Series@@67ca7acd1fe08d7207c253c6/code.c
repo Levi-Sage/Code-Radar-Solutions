@@ -8,6 +8,6 @@ int fibonacciSeries(int n){
     int fiboNm1 = fibonacciSeries(n-1);
     int fiboNm2 = fibonacciSeries(n-2);
     int fibo = fiboNm1 + fiboNm2;
-    // printf("%d", fibo);
-    return fibo;
+    printf("%d", fibo);
+    
 }
